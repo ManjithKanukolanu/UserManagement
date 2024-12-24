@@ -1,0 +1,50 @@
+<%- include('parts/_header1')%>
+<main id="site-main">
+    <div class="container">
+      <div class="box">
+        <div class="filter">
+          <a class="da" href="/">
+              <span class="U"><i class=" fas fa-angle-double-left"></i>All Users</i></span>
+          </a>
+        </div>
+      </div>
+      <div class="from">
+          <h2 class="txt">New User</h2>
+      </div>
+      <form method="POST" action="/new-user">
+        <div class="new_user">
+          <label for="id">ID</label>
+          <input type="text" name="ID" placeholder="" >
+       </div>
+       <div class="new_user">
+          <label for="name">Name</label>
+          <input type="text" name="Name" placeholder="" >
+       </div>
+       <div class="new_user">
+          <label for="email">Email</label>
+          <input type="text" name="Email" placeholder="" >
+       </div>
+       <div class="new_user">
+          <label for="name">Gender</label>
+          <div class="radio">
+              <input type="radio" name="Gender" value="Male" > Male
+          </div>
+          <div class="radio">
+              <input type="radio" name="Gender" value="Female" > Female
+          </div>
+       </div>
+       <div class="new_user">
+          <label for="status">Status</label>
+          <div class="radio">
+              <input type="radio" name="Status" value="Active" > Active
+          </div>
+          <div class="radio">
+              <input type="radio" name="Status" value="Inactive"> Inactive
+          </div>
+       </div>
+       <div class="form-group">
+            <button type="submit" class="btn" >Save</button>
+       </div>
+      </form>
+</main>
+<%- include('parts/_footer')%>

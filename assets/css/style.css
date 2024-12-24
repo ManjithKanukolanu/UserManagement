@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    font-family: "PT Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#header {
+    background-color: #343a40;
+    padding: 20px 0;
+}
+
+#header .nav-brand {
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+#site-main {
+    padding: 40px 0;
+}
+
+.box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box a {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.box a:hover {
+    background-color: #0056b3;
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.table thead {
+    background-color: #343a40;
+    color: white;
+}
+
+.table th,
+.table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table .thead-dark th {
+    background-color: #343a40;
+    color: #fff;
+}
+
+
+/* Wrapper for action buttons */
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spacing between buttons */
+  }
+  
+  /* Common styling for buttons to make them same size */
+  .action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Adjust as needed */
+    height: 40px; /* Adjust as needed */
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue background */
+    color: white;
+    text-decoration: none; /* Remove underline for links */
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+
+  .action-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Specific styles for delete button */
+  .btn1 {
+    background-color: #dc3545; /* Red background */
+  }
+  
+  .btn1:hover {
+    background-color: #a71d2a; /* Darker red on hover */
+  }
+  
+  /* Icon styles */
+  .action-btn span i {
+    font-size: 20px; /* Adjust icon size */
+  }
+  
+
+@media (max-width: 768px) {
+    .table th,
+    .table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #header .nav-brand {
+        font-size: 20px;
+    }
+
+    .box a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}

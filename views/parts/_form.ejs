@@ -1,0 +1,33 @@
+    <div class="new_user">
+       <label for="id">ID</label>
+       <input type="text" name="ID" placeholder="" value="<%= userobj.ID %>">
+    </div>
+    <div class="new_user">
+       <label for="name">Name</label>
+       <input type="text" name="Name" placeholder="" value="<%= userobj.Name %>">
+    </div>
+    <div class="new_user">
+       <label for="email">Email</label>
+       <input type="text" name="Email" placeholder="" value="<%= userobj.Email %>">
+    </div>
+    <div class="new_user">
+       <label for="name">Gender</label>
+       <div class="radio">
+           <input type="radio" name="Gender" value="Male" <%= userobj.Gender === 'Male' ? 'checked':'' %>> Male
+       </div>
+       <div class="radio">
+           <input type="radio" name="Gender" value="Female" <%= userobj.Gender === 'Female' ? 'checked':'' %>> Female
+       </div>
+    </div>
+    <div class="new_user">
+       <label for="status">Status</label>
+       <div class="radio">
+           <input type="radio" name="Status" value="Active" <%= userobj.Status === 'Active'? 'checked':'' %>> Active
+       </div>
+       <div class="radio">
+           <input type="radio" name="Status" value="Inactive" <%= userobj.Status === 'Inactive' ? 'checked':'' %>> Inactive
+       </div>
+    </div>
+    <div class="form-group">
+         <button type="submit" class="btn" >Save</button>
+    </div>

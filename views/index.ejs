@@ -1,0 +1,29 @@
+<%- include('parts/_header')%>
+<main id="site-main">
+    <div class="container">
+      <div class="box">
+        <a href="/add-user">
+            <span class="text">New User <i class="fa-regular fa-user"></i></span>
+        </a>
+    </div>
+    </div>
+
+<form action="/">
+       <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            <%- include('parts/_show')%>
+           </tbody>
+        </table>
+</form>
+</main>
+<%- include('parts/_footer')%>

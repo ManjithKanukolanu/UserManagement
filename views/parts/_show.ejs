@@ -1,0 +1,23 @@
+<% users.forEach(user=>{%>
+ <tr>
+    <td><%= user.ID %></td>
+    <td><%= user.Name %></td>
+    <td><%= user.Email %></td>
+    <td><%= user.Gender %></td>
+    <td><%= user.Status %></td>
+    <td>
+      <div class="action-buttons">
+         <a href="/update-user?id=<%= user.ID %>" class="btn action-btn">
+           <span class="ang1"><i class="fas fa-pencil-alt"></i></span>
+         </a>
+         <form action="/delete-user" method="POST">
+          <input type="hidden" name="id" value="<%= user.ID %>">
+           <button type="submit" class="btn1 action-btn">
+             <span class="del"><i class="fas fa-times"></i></span>
+           </button>
+         </form>
+      </div>
+    </td>       
+ </tr>
+<%})%>
+
